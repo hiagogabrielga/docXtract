@@ -1,0 +1,16 @@
+.footerText{
+    color: var(--font-paragrafo);
+    cursor: default;
+    font-size: 14px;
+}
+
+.ancora{
+    color: var(--font-paragrafo);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.ancora:hover{
+    color: black;
+    text-decoration:underline;
+}

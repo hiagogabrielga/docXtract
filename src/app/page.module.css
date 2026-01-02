@@ -1,0 +1,334 @@
+.subTitulo {
+  background-color: var(--background-blue);
+  color: var(--font-blue);
+  width: 250px;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.titulo {
+  color: var(--font-titulo);
+  font-size: 16px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.paragrafo {
+  color: var(--font-paragrafo);
+  font-size: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  gap: 25px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 400px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+
+.tituloCard {
+  color: var(--font-titulo);
+}
+
+.paragrafoCard {
+  color: var(--font-paragrafo);
+  font-size: 14px;
+}
+
+.icone {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#iconeFile {
+  background-color: rgb(241, 234, 241);
+  color: purple;
+}
+
+#iconeUpload {
+  background-color: var(--background-blue);
+  color: var(--font-blue);
+}
+
+#iconeGrafico {
+  background-color: rgb(223, 253, 223);
+  color: green;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: rgba(31, 31, 31, 0.35) 0px 5px 15px;
+}
+
+.containerInput {
+  margin-top: 100px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 55%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 32px 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.wrapper:hover {
+  border-color: #3b82f6;
+  background-color: #f8fafc;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background-color: #eff6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.text {
+  font-size: 14px;
+  cursor: pointer;
+  color: #0f172a;
+}
+
+.text span {
+  cursor: pointer;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.hint {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #64748b;
+}
+
+.dropzone {
+  cursor: pointer;
+}
+
+/* 🔴 INPUT REAL FICA INVISÍVEL */
+.input {
+  display: none;
+  cursor: pointer;
+}
+
+.fileList {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.fileItem {
+  box-shadow: inset 0px 80px 100px -10px white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  width: 95%;
+  border-radius: 8px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+}
+
+.fileName {
+  font-size: 14px;
+  color: #334155;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.removeBtn {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botaoExcel{
+  margin-top: 50px;
+  height: 60px;
+  width: 220px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  background-color: rgb(60, 192, 60);
+  font-weight: bolder;
+  color: rgb(233, 233, 233);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.botaoExcel:hover{
+  transform: scale(1.05);
+  opacity: 90%;
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    gap: 20px;
+  }
+
+  .card {
+    height: auto;
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 15px;
+  }
+
+  .paragrafo {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .subTitulo {
+    width: auto;
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .titulo {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+
+  .paragrafo {
+    font-size: 16px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 16px;
+    width: 95%;
+  }
+
+  .card {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .containerInput {
+    margin-top: 60px;
+    padding: 16px;
+    width: 90%;
+  }
+
+  .wrapper {
+    padding: 24px 16px;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .fileList {
+    max-height: 220px;
+  }
+
+  .botaoExcel {
+    width: 100%;
+    max-width: 300px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 13px;
+  }
+
+  .paragrafo {
+    font-size: 15px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  .hint {
+    font-size: 11px;
+  }
+
+  .fileItem {
+    padding: 8px 10px;
+  }
+
+  .fileName {
+    font-size: 13px;
+  }
+}

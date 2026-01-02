@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 160px;
+  margin-bottom: 60px;
+}
+
+.nav {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.li {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.ancora {
+  display: flex;
+  align-items: center;
+  color: rgb(69, 87, 87);
+  gap: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 25px;
+}
+
+.active {
+  color: var(--font-blue); /* azul (ativo) */
+  background-color: var(--background-blue);
+}
+
+.ancoraDesativa {
+  color: rgb(207, 207, 207);
+  text-decoration: line-through;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 368px) {
+  .ul {
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  .nav {
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+}
