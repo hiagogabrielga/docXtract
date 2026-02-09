@@ -96,6 +96,7 @@
   background-color: white;
   box-sizing: border-box;
   padding: 20px;
+  max-width: 720px;
   width: 55%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 20px;
